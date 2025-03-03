@@ -1,0 +1,2 @@
+**Interactive Interest Calculator** 
+- A modern, sleek, and responsive interest calculator built with React.js. Users can calculate interest **monthly or yearly** based on the principal amount, duration, and rate. Features **dark mode, smooth animations (Framer Motion), and a clear button** for resetting inputs. 🚀💰
