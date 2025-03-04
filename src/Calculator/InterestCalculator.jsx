@@ -17,8 +17,12 @@ const InterestCalculator = () => {
       const T = parseFloat(duration);
       const R = parseFloat(rate);
 
-      let result =
-         type === "monthly" ? (P * R * T) / (100 * 12) : (P * R * T) / 100;
+      let result;
+      if (type === "monthly") {
+         result = (P * R * (T / 12)) / 100; // Convert months to years
+      } else {
+         result = (P * R * T) / 100; // T is already in years
+      }
 
       setInterest(result.toFixed(2));
    };
@@ -116,7 +120,7 @@ const InterestCalculator = () => {
 
          {/* Footer Section */ }
          <footer className="footer">
-            <p>&copy; { new Date().getFullYear() } All right reserved. Designed & Developed by iametor</p>
+            <p>&copy; { new Date().getFullYear() } All right reserved.</p> <p>Designed & Developed by iametor</p>
          </footer>
       </>
    );
