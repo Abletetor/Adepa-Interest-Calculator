@@ -116,7 +116,7 @@ const InterestCalculator = () => {
 
          {/* Footer Section */ }
          <footer className="footer">
-            <p>&copy; { new Date().getFullYear() } All right reserved. Designed & Developed by iametor</p>
+            <p>&copy; { new Date().getFullYear() } All right reserved.</p> <p>Designed & Developed by iametor</p>
          </footer>
       </>
    );
